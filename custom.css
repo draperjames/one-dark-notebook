@@ -166,9 +166,8 @@ Notebook Background
 @media not print {
   .notebook_app #notebook {
   background: #2C2C2C;
-    /*border-radius: 1em;*/
+  /*border-radius: 1em;*/
   }
-
   .notebook_app #notebook-container, .edit_app #texteditor-backdrop {
     background: #272727;
     /*border-radius: 1em;*/
@@ -423,11 +422,9 @@ div.CodeMirror-selected {background: rgba(221, 240, 255, 0.19) !important;}
 .cm-s-ipython span.cm-link {color: #b48ead;}
 
 .cm-s-ipython .CodeMirror-matchingbracket { text-decoration: underline; color: #dfe1e8 !important;}
-
 /*
   Markdown editing
 */
-
 .cm-s-default span.cm-header {color: #CF4A4C;}
 .cm-s-default span.cm-variable-2 {color: #7587A6;}
 .cm-s-default span.cm-comment {color: #7F7A80;}
