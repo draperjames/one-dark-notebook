@@ -572,8 +572,9 @@ div.CodeMirror-selected {
     color: #dfe1e8;
 }
 
+/*Highlight selection*/
 .cm-s-ipython div.CodeMirror-selected {
-    border-radius: .5em;
+    /*border-radius: .5em;*/
     background: #343d46 !important;
 }
 
@@ -590,6 +591,7 @@ div.CodeMirror-selected {
     border-left: 1px solid #a7adba !important;
 }
 
+/*Comment color*/
 .cm-s-ipython span.cm-comment {
     color: #ab7967;
 }
@@ -606,8 +608,10 @@ div.CodeMirror-selected {
     color: #a3be8c;
 }
 
+/*Keywords such as import*/
 .cm-s-ipython span.cm-keyword {
-    color: #bf616a;
+    /*color: #bf626b;*/
+    color: #C678DD;
 }
 
 .cm-s-ipython span.cm-string {
@@ -623,7 +627,7 @@ div.CodeMirror-selected {
 }
 
 .cm-s-ipython span.cm-variable {
-    color: #8fa1b3;
+    color: #C6C5FE;
 }
 
 .cm-s-ipython span.cm-variable-2 {
