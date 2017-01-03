@@ -1,5 +1,5 @@
 /*
-  Dark theme for Jupyter Notebook/iPython 4
+  One Dark theme for Jupyter Notebook/iPython 4
   Author: James Draper
 
   Repo at: https://github.com/powerpak/jupyter-dark-theme
@@ -27,7 +27,8 @@
 */
 
 .CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
-    font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
+    /*font-family: "Bitstream Vera Sans Mono", Monaco, monospace;*/
+    font-family: Consolas,monaco,monospace;
     font-size: 9pt;
     /*border-radius: 1em;*/
 }
@@ -37,7 +38,8 @@
 }
 
 div.output pre, div.output code, .rendered_html pre, .rendered_html code, div.completions select, div.container pre {
-    font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
+    /*font-family: "Bitstream Vera Sans Mono", Monaco, monospace;*/
+    font-family: Consolas,monaco,monospace;
 }
 
 div.output pre, div.output code, .rendered_html pre, .rendered_html p code, div.completions select, div.container pre {
@@ -45,7 +47,8 @@ div.output pre, div.output code, .rendered_html pre, .rendered_html p code, div.
 }
 
 div.prompt, div.tooltiptext pre {
-    font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
+    /*font-family: "Bitstream Vera Sans Mono", Monaco, monospace;*/
+    font-family: Consolas,monaco,monospace;
     font-size: 8pt;
 }
 
@@ -432,7 +435,8 @@ div#notebook .text_cell_render {
 }
 
 div.output_html {
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+    font-family: Consolas,monaco,monospace;
 }
 
 
@@ -597,45 +601,76 @@ div.CodeMirror-selected {
 }
 
 .cm-s-ipython span.cm-atom {
-    color: #b48ead;
+    /*color: #b48ead;*/
+    color: #61afef;
 }
 
 .cm-s-ipython span.cm-number {
-    color: #b48ead;
+    /*color: #b48ead;*/
+    color: #e2a271;
 }
 
-.cm-s-ipython span.cm-property, .cm-s-ipython span.cm-attribute {
-    color: #a3be8c;
+.cm-s-ipython span.cm-property{
+    /*color: #EDEDED;*/
+    color: #61afef;
+}
+
+.cm-s-ipython span.cm-attribute {
+    /*color: #a3be8c;*/
+    /*color:#EDEDED;*/
+     color: #ea8080;
 }
 
 /*Keywords such as import*/
 .cm-s-ipython span.cm-keyword {
     /*color: #bf626b;*/
-    color: #C678DD;
+    /*color: #C678DD;*/
+    /*color: #BD7ADE;*/
+    color : #cc89e0;
 }
 
 .cm-s-ipython span.cm-string {
-    color: #519F50;
+    /*color: #98C476;*/
+    color: #94c273;
+
+}
+
+.cm-s-ipython span.cm-meta {
+    color: #51b6c3;
 }
 
 .cm-s-ipython span.cm-operator {
-    color: #ab7967;
+    /*color: #ab7967;*/
+    color: #5cadf1;
 }
 
 .cm-s-ipython span.cm-builtin {
-    color: #b48ead;
+    /*color: #b48ead;*/
+    color: #ea8080;
 }
 
+/*All varibles */
 .cm-s-ipython span.cm-variable {
-    color: #C6C5FE;
+    /*color:#EDEDED;*/
+    color: #B5C2D9;
 }
 
 .cm-s-ipython span.cm-variable-2 {
-    color: #e761e9;
+    /*color: #e761e9;*/
+    color: #ea8080;
+}
+
+.cm-s-ipython span.cm-variable-3 {
+    /*color: #e761e9;*/
+    color: #51b6c3;
 }
 
 .cm-s-ipython span.cm-def {
-    color: #CC7833;
+    /*color: #CC7833;*/
+    /*color: #96CBFE;*/
+    /*color: #61ADEF;*/
+    color: #61afef;
+
 }
 
 .cm-s-ipython span.cm-error {
