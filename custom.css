@@ -26,10 +26,12 @@
 }
 
 .terminal-app .terminal { line-height: 1.3em; }
+
 div.output pre, div.output code, .rendered_html pre, .rendered_html code, div.completions select, div.container pre {
   /*font-family: "Bitstream Vera Sans Mono", Monaco, monospace;*/
   font-family: Consolas,monaco,monospace;
 }
+
 div.output pre, div.output code, .rendered_html pre, .rendered_html p code, div.completions select, div.container pre {
     font-size: 9pt;
 }
@@ -45,6 +47,7 @@ div.input_area {
     background: rbga(0, 0, 0, 0.5);
     /*success!*/
     border-radius: .5em;/*JAD round counders */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* GLOBALS */
