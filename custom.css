@@ -36,6 +36,12 @@ div.output pre, div.output code, .rendered_html pre, .rendered_html p code, div.
     font-size: 9pt;
 }
 
+/*Make rendered_html visible*/
+/*.rendered_html p{
+
+}*/
+
+
 div.prompt, div.tooltiptext pre {
     /*font-family: "Bitstream Vera Sans Mono", Monaco, monospace;*/
     font-family: Consolas,monaco,monospace;
@@ -52,9 +58,18 @@ div.input_area {
 
 /* GLOBALS */
 
+/* The majority of the text on the intro page is warapped in the <a> tag.*/
 @media not print { body { background-color: #eee; } }
 a { color: #CC7833; }
 a:hover, a:focus { color: #DE6F71; }
+
+/* Set the color of the h2 heading.*/
+h2{ color: #c2c1c1; }
+/* set the text color for th <p> tag. Most of the text on the nbextension page is wrapped with the <p> tag. */
+p{ color: #dccde0; }
+
+li{ color: #b9c2dd; }
+
 
 /* INTRO PAGE */
 
@@ -322,9 +337,7 @@ div.output_html {
     font-family: Consolas,monaco,monospace;
 }
 
-/*
-  Set colors and styles that we only want on the screen, not for print
-*/
+/*Set colors and styles that we only want on the screen, not for print*/
 
 @media not print {
   .notebook_app div.cell.running .input .input_area {
@@ -368,12 +381,9 @@ div.output_html {
   }
 }
 
-/*
-  Terminal text coloring
-*/
+/*Terminal text coloring*/
 
 span.ansiblack {color: #323537;}
-
 span.ansiblue {color: #afc4db;}
 span.ansigray {color: #838184;}
 span.ansigreen {color: #8f9d6a;}
@@ -381,11 +391,13 @@ span.ansipurple {color: #9b859d;}
 span.ansired {color: #cf6a4c;}
 span.ansiyellow {color: #c2bc15;}
 
-/*
-  Code editing
-*/
-/*success!*/
-.CodeMirror {background: #141414; color: #787474; border-radius: .35em;}
+/*CODE EDITING*/
+
+.CodeMirror {
+    background: #141414;
+    color: #787474; border-radius: .35em;
+    /*box-shadow: inset 10px 10px 16px -4px rgba(0, 0, 0, 0.44);*/
+}
 
 div.CodeMirror-selected {background: rgba(221, 240, 255, 0.19) !important;}
 
@@ -424,10 +436,20 @@ div.CodeMirror-selected {background: rgba(221, 240, 255, 0.19) !important;}
 .cm-s-ipython span.cm-tag {color: #bf616a;}
 .cm-s-ipython span.cm-link {color: #b48ead;}
 
-.cm-s-ipython .CodeMirror-matchingbracket { text-decoration: underline; color: #dfe1e8 !important;}
-/*
-  Markdown editing
-*/
+.cm-s-ipython .CodeMirror-matchingbracket { text-decoration: underline; color:#88ff4d !important;}
+
+/*Markdown editing*/
+
+.CodeMirror.cm-s-default {
+    background: #241a1a;
+    color: #787474;
+    border-radius: .35em;
+    box-shadow: inset 10px 10px 16px -4px rgba(0, 0, 0, 0.44);
+}
+
+
+.cm-s-default span.cm-bracket {color: #c0c5ce;}
+
 .cm-s-default span.cm-header {color: #CF4A4C;}
 
 .cm-s-default span.cm-variable-2 {color: #7587A6;}
