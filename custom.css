@@ -1,22 +1,18 @@
 /*
   Dark theme for Jupyter Notebook/iPython 4
+
   Author: James Draper
 
-  Repo at: https://github.com/powerpak/jupyter-dark-theme
-
   Inspired by and adapted from the following:
+  https://github.com/powerpak/jupyter-dark-theme
   Base16 for iPython Notebook (https://github.com/nsonnad/base16-ipython-notebook)
   Base16 Twilight Dark, David Hart (http://hart-dev.com)
   CodeMirror template adapted for IPython Notebook by Nikhil Sonnad (https://github.com/nsonnad/base16-ipython-notebook)
   CodeMirror template by Jan T. Scott (https://github.com/idleberg/base16-chrome-devtools)
   Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
-*/
-
-/*
 
   CHANGE THE BACKGROUND OF ANY MATPLOTLIB OUTPUT BY ADDING THIS:
   matplotlib.rcParams['figure.facecolor'] = 'white'
-
 */
 
 .CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
@@ -407,35 +403,25 @@ div.CodeMirror-selected {background: rgba(221, 240, 255, 0.19) !important;}
 .CodeMirror-cursor {border-left: 1px solid #A7A7A7 !important; margin-top: -2px; min-height: 18px;}
 
 .cm-s-ipython.CodeMirror {background: #2C2C2C; color: #dfe1e8;}
-
 .cm-s-ipython div.CodeMirror-selected {background: #343d46 !important;}
-
 .cm-s-ipython .CodeMirror-gutters {background: #2b303b; border-right: 0px;}
 .cm-s-ipython .CodeMirror-linenumber {color: #65737e;}
 .cm-s-ipython .CodeMirror-cursor {border-left: 1px solid #a7adba !important;}
-
 .cm-s-ipython span.cm-comment {color: #ab7967;}
 .cm-s-ipython span.cm-atom {color: #b48ead;}
 .cm-s-ipython span.cm-number {color: #b48ead;}
-
 .cm-s-ipython span.cm-property, .cm-s-ipython span.cm-attribute {color: #a3be8c;}
-
 .cm-s-ipython span.cm-keyword {color: #bf616a;}
-
 .cm-s-ipython span.cm-string {color: #519F50;}
 .cm-s-ipython span.cm-operator {color: #ab7967;}
 .cm-s-ipython span.cm-builtin {color: #b48ead;}
-
 .cm-s-ipython span.cm-variable {color: #8fa1b3;}
-
 .cm-s-ipython span.cm-variable-2 {color: #e761e9;}
-
 .cm-s-ipython span.cm-def {color: #CC7833;}
 .cm-s-ipython span.cm-error {background: #bf616a; color: #a7adba;}
 .cm-s-ipython span.cm-bracket {color: #c0c5ce;}
 .cm-s-ipython span.cm-tag {color: #bf616a;}
 .cm-s-ipython span.cm-link {color: #b48ead;}
-
 .cm-s-ipython .CodeMirror-matchingbracket { text-decoration: underline; color:#88ff4d !important;}
 
 /*Markdown editing*/
