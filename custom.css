@@ -1,15 +1,16 @@
 /*
-  One Dark for Jupyter Notebook/iPython 4
 
-  Author: James Draper
+One Dark for Jupyter Notebook/iPython 4
 
-  Inspired by and adapted from the following:
-  https://github.com/powerpak/jupyter-dark-theme
-  Base16 for iPython Notebook (https://github.com/nsonnad/base16-ipython-notebook)
-  Base16 Twilight Dark, David Hart (http://hart-dev.com)
-  CodeMirror template adapted for IPython Notebook by Nikhil Sonnad (https://github.com/nsonnad/base16-ipython-notebook)
-  CodeMirror template by Jan T. Scott (https://github.com/idleberg/base16-chrome-devtools)
-  Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+Author: James Draper
+
+Inspired by and adapted from the following:
+https://github.com/powerpak/jupyter-dark-theme
+Base16 for iPython Notebook (https://github.com/nsonnad/base16-ipython-notebook)
+Base16 Twilight Dark, David Hart (http://hart-dev.com)
+CodeMirror template adapted for IPython Notebook by Nikhil Sonnad (https://github.com/nsonnad/base16-ipython-notebook)
+CodeMirror template by Jan T. Scott (https://github.com/idleberg/base16-chrome-devtools)
+Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
 
 One Dark Color list
 
@@ -42,6 +43,26 @@ atom-one-dark-gray : #3E4451
 :root {
     --main-font-family: Consolas, monaco, monospace;
     --main-bg-color: #282C34;
+    --atom-one-dark-cyan : #56B6C2;
+    --atom-one-dark-blue : #61AFEF;
+    --atom-one-dark-bg-1 : #121417;
+    --atom-one-dark-mono-2 : #828997;
+    --atom-one-dark-red-1 : #E06C75;
+    --atom-one-dark-mono-1 : #ABB2BF;
+    --atom-one-dark-silver : #AAAAAA;
+    --atom-one-dark-purple : #C678DD;
+    --atom-one-dark-orange-2 : #E5C07B;
+    --atom-one-dark-bg-hl : #2F343D;
+    --atom-one-dark-black : #0F1011;
+    --atom-one-dark-gutter : #666D7A;
+    --atom-one-dark-fg : #ABB2BF;
+    --atom-one-dark-green : #98C379;
+    --atom-one-dark-red-2 : #BE5046;
+    --atom-one-dark-orange-1 : #D19A66;
+    --atom-one-dark-mono-3 : #5C6370;
+    --atom-one-dark-accent : #AEB9F5;
+    --atom-one-dark-bg : #282C34;
+    --atom-one-dark-gray : #3E4451;
 }
 
 
@@ -489,10 +510,10 @@ div.output_html {
         }
     }
     .notebook_app div.input_prompt {
-        color: #9b703f;
+        color: var(--atom-one-dark-green);
     }
     .notebook_app div.output_prompt {
-        color: #9b859d;
+        color: var(--atom-one-dark-red-1);
     }
     .notebook_app div.input_area {
         border: 1px solid #464b50;
@@ -512,6 +533,8 @@ div.output_html {
         color: #eee;
     }
     .notebook_app .rendered_html table, .notebook_app .rendered_html th, .notebook_app .rendered_html tr, .notebook_app .rendered_html td {
+        background-color: var(--main-bg-color);
+        table-layout: auto !important;
         border: 1px #979797 solid;
         color: #979797;
     }
@@ -521,7 +544,7 @@ div.output_html {
     }
     .notebook_app table.dataframe tr {
         border: 1px #979797;
-        border-radius: .5em;
+        /*border-radius: .5em;*/
     }
     .notebook_app .rendered_html pre, .notebook_app .rendered_html code {
         border: 0;
@@ -567,7 +590,7 @@ span.ansiyellow {
 
 .CodeMirror {
     background: #141414;
-    color: #787474;
+    color: var(--atom-one-dark-mono-1);
     border-radius: .35em;
     /*box-shadow: inset 10px 10px 16px -4px rgba(0, 0, 0, 0.44);*/
 }
@@ -671,7 +694,8 @@ div.CodeMirror-selected {
 }
 
 .cm-s-ipython span.cm-def {
-    color: #e2a271;
+    /*color: #e2a271;*/
+    color: var(--atom-one-dark-blue);
 }
 
 .cm-s-ipython span.cm-error {
