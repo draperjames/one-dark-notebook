@@ -43,6 +43,7 @@ atom-one-dark-gray : #3E4451
 :root {
     --main-font-family: Consolas, monaco, monospace;
     --main-bg-color: #282C34;
+
     --atom-one-dark-cyan : #56B6C2;
     --atom-one-dark-blue : #61AFEF;
     --atom-one-dark-bg-1 : #121417;
@@ -57,7 +58,7 @@ atom-one-dark-gray : #3E4451
     --atom-one-dark-gutter : #666D7A;
     --atom-one-dark-fg : #ABB2BF;
     --atom-one-dark-green : #98C379;
-    --atom-one-dark-red-2 : #BE5046;
+    --atom-one-dark-red-2 : #BE5046;3§
     --atom-one-dark-orange-1 : #D19A66;
     --atom-one-dark-mono-3 : #5C6370;
     --atom-one-dark-accent : #AEB9F5;
@@ -694,8 +695,9 @@ div.CodeMirror-selected {
 }
 
 .cm-s-ipython span.cm-def {
-    /*color: #e2a271;*/
-    color: var(--atom-one-dark-blue);
+    color: #e2a271;
+    color: var(--atom-one-dark-orange-2);
+    /*color: var(--atom-one-dark-blue);*/
 }
 
 .cm-s-ipython span.cm-error {
